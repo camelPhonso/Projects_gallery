@@ -52,11 +52,12 @@ html{
 .thumbnail{
     height: 100%;
     width:100%;
-    object-fit:fill;
+    object-fit:cover
 }
 
 .preview:hover .thumbnail{
     opacity:30%;
+    object-fit:fill;
 }
 
 .film_over{
