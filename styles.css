@@ -7,14 +7,15 @@ html{
 }
 
 :root{
-    --darks:black;
-    --base:#C0C0C0;
-    --highlights:#000080;
+    --darks:131b23;
+    --base:#e7dfc6;
+    --highlights:#e9f1f7;
 }
 
-.bordered{
+/*this class is commented out because it was only meant to help me while creating the page - it would have been deleted entirely, but I wanted to show the process here*/
+/*.bordered{
     border: 5px solid black;
-}
+}*/
 
 #gallery{
     display:flex;
@@ -51,7 +52,7 @@ html{
 .thumbnail{
     height: 100%;
     width:100%;
-    object-fit:none;
+    object-fit:fill;
 }
 
 .preview:hover .thumbnail{
