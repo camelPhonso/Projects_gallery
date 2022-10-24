@@ -6,8 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>Project Gallery</title>
+        <script defer>
+            function show(obj){
+                obj.parentElement.classList.toggle('hidden');
+            }
+        </script>
     </head>
     <body>
+        <i class="fa-solid fa-house"></i>
         <div id="gallery">
             <div class="card bordered">
                 <p class="title bordered">Interest Page Challenge</p>
@@ -17,8 +23,9 @@
                         <p>Open Project</p>
                     </div></a>
                 </div>
-                <div class="description bordered">
-                    <button type="button" class="button">See more<div class='long_text bordered'><p>An information page on the counter-culture movement rooted in punk music.</p></div></button>
+                <div class="description hidden bordered">
+                    <button type="button" class="button" onclick="show(this)">See more</button>
+                    <div class='long_text bordered'><p>An information page on the counter-culture movement rooted in punk music.</p></div>
                     <p>Straight Edge</p>
                 </div>    
             </div>
@@ -31,8 +38,9 @@
                         <p>Open Project</p>
                     </div></a>
                 </div>
-                <div class="description bordered">
-                    <button type="button" class="button">See more<div class='long_text bordered'><p>Movie Night Assistant allows you to view and edit a common pool of movies</p></div></button>
+                <div class="description hidden bordered">
+                    <button type="button" class="button" onclick="show(this)">See more</button>
+                    <div class='long_text bordered'><p>Movie Night Assistant allows you to view and edit a common pool of movies</p></div>
                     <p>Movie Night Assistant</p>
                 </div>    
             </div>
@@ -45,8 +53,9 @@
                         <p>Open Project</p>
                     </div></a>
                 </div>
-                <div class="description bordered">
-                    <button type="button" class="button">See more<div class='long_text bordered'><p>This comment section allows you to submit comments under a chosen user name</p></div></button>
+                <div class="description hidden bordered">
+                    <button type="button" class="button" onclick="show(this)">See more</button>
+                    <div class='long_text bordered'><p>This comment section allows you to submit comments under a chosen user name</p></div>
                     <p>Simple comment section</p>
                 </div>    
             </div>
@@ -59,8 +68,9 @@
                         <p>Open Project</p>
                     </div></a>
                 </div>
-                <div class="description bordered">
-                    <button type="button" class="button">See more<div class='long_text bordered'><p>Full description of the project</p></div></button>
+                <div class="description hidden bordered">
+                    <button type="button" class="button" onclick="show(this)">See more</button>
+                    <div class='long_text bordered'><p>Full description of the project</p></div>
                     <p>Short Intro</p>
                 </div>    
             </div>
@@ -68,16 +78,16 @@
             <div class="card bordered">
                 <p class="title bordered">Title</p>
                 <div class="preview bordered">
-                    <img class="thumbnail" alt="black and white diamond pattern" src="https://images.template.net/wp-content/uploads/2016/06/28100451/Black-and-White-Patterns.jpg?width=584">
+                    <img class="thumbnail" alt="black and white pattern of circles" src="#">
                     <a href="" target="_blank"><div class="film_over">
                         <p>Open Project</p>
                     </div></a>
                 </div>
-                <div class="description bordered">
-                    <button type="button" class="button">See more<div class='long_text bordered'><p>Full description of the project</p></div></button>
+                <div class="description hidden bordered">
+                    <button type="button" class="button" onclick="show(this)">See more</button>
+                    <div class='long_text bordered'><p>Full description of the project</p></div>
                     <p>Short Intro</p>
                 </div>    
             </div>
-        </div>
     </body>
 </html>
